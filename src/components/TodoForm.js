@@ -1,5 +1,5 @@
-import React from 'react'
-import './TodoForm.css'
+import React from "react";
+import "./TodoForm.css";
 
 export default function TodoForm() {
   return (
@@ -10,5 +10,5 @@ export default function TodoForm() {
         <button>Add</button>
       </div>
     </form>
-  )
+  );
 }

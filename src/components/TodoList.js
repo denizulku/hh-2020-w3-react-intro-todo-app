@@ -1,14 +1,13 @@
-import React from 'react'
-import Todo from './Todo'
-import './TodoList.css'
+import React from "react";
+import Todo from "./Todo";
+import "./TodoList.css";
 
-export default function TodoList() {
+export default function TodoList({ todos }) {
   return (
     <section className="TodoList">
-      <Todo text="Coffee" completed />
-      <Todo text="Milk" />
-      <Todo text="Sugar" />
-      <Todo text="Apples" />
+      {todos.map((todo) => (
+        <Todo key={todo.id} todo={todo.todo} completed={todo.completed} />
+      ))}
     </section>
-  )
+  );
 }

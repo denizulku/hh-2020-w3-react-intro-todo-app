@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
-export default function Todo({text, completed}) {
+export default function Todo({ todo, completed }) {
   return (
     <label className="Todo">
       <input checked={completed} type="checkbox" />
-      {text}
+      {todo}
     </label>
-  )
+  );
 }
